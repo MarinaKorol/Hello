@@ -1,4 +1,4 @@
-//DataTypes
+ï»¿//DataTypes
 #include<iostream>
 using namespace std;
 
@@ -18,19 +18,19 @@ void main()
 	/*cout << true << endl;
 	cout << false << endl;
 	cout << (bool)-0.0000000000001 << endl;*/
-	cout << "ÒÈÏ ÄÀÍÍÛÕ INT" << endl;
+	cout << "Ð¢Ð˜ÐŸ Ð”ÐÐÐÐ«Ð¥ INT" << endl;
 	cout << sizeof(int) << endl;
 	cout << INT_MIN << "..." << INT_MAX << endl;
 	cout << 0 << "..." << UINT_MAX << endl;
-	cout << "ÒÈÏ ÄÀÍÍÛÕ SHORT" << endl;
+	cout << "Ð¢Ð˜ÐŸ Ð”ÐÐÐÐ«Ð¥ SHORT" << endl;
 	cout << sizeof(short) << endl;
 	cout << SHRT_MIN << "..." << SHRT_MAX << endl;
 	cout << "0" << "..." << USHRT_MAX << endl;
-	cout << "ÒÈÏ ÄÀÍÍÛÕ LONG" << endl;
+	cout << "Ð¢Ð˜ÐŸ Ð”ÐÐÐÐ«Ð¥ LONG" << endl;
 	cout << sizeof(long) << endl;
 	cout << LONG_MIN << "..." << LONG_MAX << endl;
 	cout << "0" << "..." << ULONG_MAX << endl;
-	cout << "ÒÈÏ ÄÀÍÍÛÕ LONGLONG" << endl;
+	cout << "Ð¢Ð˜ÐŸ Ð”ÐÐÐÐ«Ð¥ LONGLONG" << endl;
 	cout << sizeof(long long) << endl;
 	cout << LLONG_MIN << "..." << LLONG_MAX << endl;
 	cout << "0" << "..." << ULLONG_MAX << endl;
@@ -54,41 +54,41 @@ void main()
 #endif // VALUE_CHANGE
 #ifdef CUP_OF_COFFEE
 	double price_of_coffee;
-	cout << "Ââåäèòå ñòîèìîñòü ÷àøêè êîôå: "; cin >> price_of_coffee;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ñ‡Ð°ÑˆÐºÐ¸ ÐºÐ¾Ñ„Ðµ: "; cin >> price_of_coffee;
 	int number_of_cups;
-	cout << "Ââåäèòå êîëè÷åñòâî ÷àøåê:";cin >> number_of_cups;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‡Ð°ÑˆÐµÐº:";cin >> number_of_cups;
 	double total_price = price_of_coffee * number_of_cups;
-	cout << "Ñ Âàñ " << total_price << " ðóáëåé" << endl;
+	cout << "Ð¡ Ð’Ð°Ñ " << total_price << " Ñ€ÑƒÐ±Ð»ÐµÐ¹" << endl;
 #endif // CUP_OF_COFFEE
 		
 #ifdef TASK1
 	double money;
-	cout << "Ââåäèòå äåíåæíóþ ñóììó: ";cin >> money;cout << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´ÐµÐ½ÐµÐ¶Ð½ÑƒÑŽ ÑÑƒÐ¼Ð¼Ñƒ: ";cin >> money;cout << endl;
 	int rubles = money;
 	int cop = (money - rubles) * 100;
-	cout << rubles << " ðóáëÿ " << cop << " êîïååê" << endl;
+	cout << rubles << " Ñ€ÑƒÐ±Ð»Ñ " << cop << " ÐºÐ¾Ð¿ÐµÐµÐº" << endl;
 #endif // TASK1
 #ifdef TASK2
-	cout << "Çàäàíèå ¹1" << endl;
+	cout << "Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ â„–1" << endl;
 	int exercice_book = 0;
 	double price = 3.55;
 	double total_cost = 0;
-	cout << "Ââåäèòå êîëè÷åñòâî òåòðàäåé: ";cin >> exercice_book;cout << endl;
-	cout << "Ñòîèìîñòü ïîêóïêè ñîñòàâèò " << exercice_book * price << " ðóáëåé" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‚ÐµÑ‚Ñ€Ð°Ð´ÐµÐ¹: ";cin >> exercice_book;cout << endl;
+	cout << "Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð¿Ð¾ÐºÑƒÐ¿ÐºÐ¸ ÑÐ¾ÑÑ‚Ð°Ð²Ð¸Ñ‚ " << exercice_book * price << " Ñ€ÑƒÐ±Ð»ÐµÐ¹" << endl;
 #endif // TASK2
 #ifdef TASK3
 	int EB;
 	double price_of_EB = 2.55, price_of_covers = 0.5;
-	cout << "Ââåäèòå êîëè÷åñòâî òåòðàäåé: ";cin >> EB;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‚ÐµÑ‚Ñ€Ð°Ð´ÐµÐ¹: ";cin >> EB;
 	cout << endl;
-	cout << "Ñóììà ê îïëàòå " << (double)EB * price_of_EB + (double)EB * price_of_covers << " ðóáëåé";
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° Ðº Ð¾Ð¿Ð»Ð°Ñ‚Ðµ " << (double)EB * price_of_EB + (double)EB * price_of_covers << " Ñ€ÑƒÐ±Ð»ÐµÐ¹";
 	cout << endl;
 #endif // TASK3
 #ifdef TASK4
 int km;
 double const rashod_v_litrah = 8.5, price=45.56;
-cout << "Ñêîëüêî êèëîìåòðîâ äî äà÷è?";cin >> km;
-cout << "Âàì ïîíàäîáèòñÿ íà ïîåçêó íà äà÷ó òóäàè îáðàòîíî " << (double)(km/rashod_v_litrah * price) * 2;
+cout << "Ð¡ÐºÐ¾Ð»ÑŒÐºÐ¾ ÐºÐ¸Ð»Ð¾Ð¼ÐµÑ‚Ñ€Ð¾Ð² Ð´Ð¾ Ð´Ð°Ñ‡Ð¸?";cin >> km;
+cout << "Ð’Ð°Ð¼ Ð¿Ð¾Ð½Ð°Ð´Ð¾Ð±Ð¸Ñ‚ÑÑ Ð½Ð° Ð¿Ð¾ÐµÐ·ÐºÑƒ Ð½Ð° Ð´Ð°Ñ‡Ñƒ Ñ‚ÑƒÐ´Ð°Ð¸ Ð¾Ð±Ñ€Ð°Ñ‚Ð¾Ð½Ð¾ " << (double)(km/rashod_v_litrah * price) * 2;
 cout << endl;
 #endif// TASK4
 		
