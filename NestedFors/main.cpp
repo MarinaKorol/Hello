@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 //#define MULTIPLICATION_TABLE
@@ -25,7 +25,7 @@ void main()
 #ifdef MULTIPLICATION_TABLE
 	for (int i = 1;i <= 10;i++)
 	{
-		cout << "Òàáëèöà óìíîæåíèÿ íà " << i << "\n";
+		cout << "Ð¢Ð°Ð±Ð»Ð¸Ñ†Ð° ÑƒÐ¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ñ Ð½Ð° " << i << "\n";
 		for (int j = 1;j <= 10;j++)
 		{
 			if (i < 10)cout << " ";
@@ -50,10 +50,10 @@ void main()
 		cout << endl;
 	}
 #endif // PIPHAGOR_TABLE
-	 //Ãåîìåòðè÷åñêèå çàäà÷êè
+	 //Ð“ÐµÐ¾Ð¼ÐµÑ‚Ñ€Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ Ð·Ð°Ð´Ð°Ñ‡ÐºÐ¸
 
 	int n;
-	cout << "Ââåäèòå êîëè÷åñòâî çäåçäî÷åê: ";cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð·Ð´ÐµÐ·Ð´Ð¾Ñ‡ÐµÐº: ";cin >> n;
 #ifdef SQAURE
 	for (int i = 0;i < n;i++)
 	{
@@ -67,7 +67,7 @@ void main()
 #ifdef TRIANGLE_1
 	for (int i = 0;i < n;i++)
 	{
-		for (int j = 0;j <= i;j++)//Èëè ìîæíî j<i, íî âî âíåøíåì for äîáàâèòü n+1.
+		for (int j = 0;j <= i;j++)//Ð˜Ð»Ð¸ Ð¼Ð¾Ð¶Ð½Ð¾ j<i, Ð½Ð¾ Ð²Ð¾ Ð²Ð½ÐµÑˆÐ½ÐµÐ¼ for Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ n+1.
 		{
 			cout << "* ";
 
@@ -157,9 +157,9 @@ void main()
 			else if (j == 0 || j == n)cout << VERTICAL_LINE;
 			else
 			{
-				if ((i + j) % 2 == 0)cout << WHITE_BOX << WHITE_BOX;//ìîæíî åùå ñäåëàòü cout<<((i+j)%2==0?WHITE_BOX:BLACK_BOX);
-				else cout << BLACK_BOX << BLACK_BOX;				//íî â define íóæåí ïåðåõîä â 16-ðè÷íóþ ñèñòåìó
-			}														// "\xDB\xDB" äëÿ WHITE_BOX è "\õ20\õ20"
+				if ((i + j) % 2 == 0)cout << WHITE_BOX << WHITE_BOX;//Ð¼Ð¾Ð¶Ð½Ð¾ ÐµÑ‰Ðµ ÑÐ´ÐµÐ»Ð°Ñ‚ÑŒ cout<<((i+j)%2==0?WHITE_BOX:BLACK_BOX);
+				else cout << BLACK_BOX << BLACK_BOX;				//Ð½Ð¾ Ð² define Ð½ÑƒÐ¶ÐµÐ½ Ð¿ÐµÑ€ÐµÑ…Ð¾Ð´ Ð² 16-Ñ€Ð¸Ñ‡Ð½ÑƒÑŽ ÑÐ¸ÑÑ‚ÐµÐ¼Ñƒ
+			}														// "\xDB\xDB" Ð´Ð»Ñ WHITE_BOX Ð¸ "\Ñ…20\Ñ…20"
 		}
 		cout << endl;
 	}
