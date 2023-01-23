@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 //#define TEPERATURE
@@ -12,32 +12,32 @@ void main()
 	setlocale(LC_ALL, "");
 #ifdef TEMPERATURE
 	int temperature;
-	cout << "Ââåäèòå òåìïåðàòóðó âîçäóõà: ";cin >> temperature;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñƒ Ð²Ð¾Ð·Ð´ÑƒÑ…Ð°: ";cin >> temperature;
 	if (temperature > 0)
 	{
-		cout << "Íà óëèöå õîëîäíî" << endl;
+		cout << "ÐÐ° ÑƒÐ»Ð¸Ñ†Ðµ Ñ…Ð¾Ð»Ð¾Ð´Ð½Ð¾" << endl;
 	}
 	else
 	{
-		cout << "Íà óëèöå õîëîäíî" << endl;
+		cout << "ÐÐ° ÑƒÐ»Ð¸Ñ†Ðµ Ñ…Ð¾Ð»Ð¾Ð´Ð½Ð¾" << endl;
 	}
 #endif // TEMPERATURE
 #ifdef OR
 	int n;
-	cout << "Ââåäèòå ÷èñëî: ";cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";cin >> n;
 	if (n > 0 && n < 10)
 	{
-		cout << "Öåëü ïîðàæåíà!";
+		cout << "Ð¦ÐµÐ»ÑŒ Ð¿Ð¾Ñ€Ð°Ð¶ÐµÐ½Ð°!";
 	}
 	else
 	{
-		cout << "Âû ïðîìàõíóëèñü!";
+		cout << "Ð’Ñ‹ Ð¿Ñ€Ð¾Ð¼Ð°Ñ…Ð½ÑƒÐ»Ð¸ÑÑŒ!";
 	}
 #endif // OR
 #ifdef CALCULATOR_1
 	double a, b;
 	char s;
-	cout << "Ââåäèòå ïðîñòîå àðèôìåòè÷åñêîå âûðàæåíèå ";cin >> a >> s >> b;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾ÑÑ‚Ð¾Ðµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ ";cin >> a >> s >> b;
 	if (s == '+')
 	{
 		cout << a << "+" << b << "=" << a + b << endl;
@@ -58,23 +58,23 @@ void main()
 	}
 	else
 	{
-		cout << "Îøèáêà!" << endl;
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ°!" << endl;
 	}
 #endif
 #ifdef CALCULATOR_2
 	double a, b;
 	char s;
-	cout << "Ââåäèòå ïðîñòîå àðèôìåòè÷åñêîå âûðàæåíèå ";cin >> a >> s >> b;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾ÑÑ‚Ð¾Ðµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ ";cin >> a >> s >> b;
 	switch (s)
 	{
 	case '+':cout << a << "+" << b << "=" << a + b << endl;break;
 	case '-':cout << a << "-" << b << "=" << a - b << endl;break;
 	case'/':
 		if (b != 0)cout << a << "/" << b << "=" << a / b << endl;
-		else cout << "Íåëüçÿ äåëèòü íà 0!" << endl;
+		else cout << "ÐÐµÐ»ÑŒÐ·Ñ Ð´ÐµÐ»Ð¸Ñ‚ÑŒ Ð½Ð° 0!" << endl;
 		break;
 	case'*':cout << a << "*" << b << "=" << a * b << endl;break;
-	default:cout << "Îøèáêà íà ýòàïå âûáîðà àðèôìåòè÷åñêîãî çíàêà!" << endl;
+	default:cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð½Ð° ÑÑ‚Ð°Ð¿Ðµ Ð²Ñ‹Ð±Ð¾Ñ€Ð° Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ð³Ð¾ Ð·Ð½Ð°ÐºÐ°!" << endl;
 	}
 #endif // CALCULATOR_2
 
