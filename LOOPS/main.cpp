@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include<conio.h>
 using namespace std;
 
@@ -11,9 +11,9 @@ void main()
 {
 	setlocale(LC_ALL, "");
 #ifdef WHILE_1
-	int n;//количество итераций
-	int i = 0;//счетчик цикла
-	cout << "Введите количество итераций: ";cin >> n;
+	int n;//РєРѕР»РёС‡РµСЃС‚РІРѕ РёС‚РµСЂР°С†РёР№
+	int i = 0;//СЃС‡РµС‚С‡РёРє С†РёРєР»Р°
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РёС‚РµСЂР°С†РёР№: ";cin >> n;
 	while (i < n)
 	{
 		cout << i << "Hello, World!\n";
@@ -22,7 +22,7 @@ void main()
 #endif // WHILE_1
 #ifdef WHILE_2
 	int n;
-	cout << "Введите количество итераций ";cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РёС‚РµСЂР°С†РёР№ ";cin >> n;
 	while (n)
 	{
 		cout << n << "\t";
@@ -34,28 +34,28 @@ void main()
 #ifdef POLINDROM
 	int number;
 	int reverse = 0;
-	cout << "Введите число: ";cin >> number;
+	cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ";cin >> number;
 	int buffer = number;
 	while (buffer)
 	{
-		reverse *= 10;//освождаем место для следующего младшего разряда
+		reverse *= 10;//РѕСЃРІРѕР¶РґР°РµРј РјРµСЃС‚Рѕ РґР»СЏ СЃР»РµРґСѓСЋС‰РµРіРѕ РјР»Р°РґС€РµРіРѕ СЂР°Р·СЂСЏРґР°
 		reverse += buffer % 10;
-		buffer /= 10;//удаляем полученный ранее младший разряд
+		buffer /= 10;//СѓРґР°Р»СЏРµРј РїРѕР»СѓС‡РµРЅРЅС‹Р№ СЂР°РЅРµРµ РјР»Р°РґС€РёР№ СЂР°Р·СЂСЏРґ
 	}
 	cout << number << endl;
 	cout << reverse << endl;
 	if (reverse == number)
 	{
-		cout << "Число палиндром!" << endl;
+		cout << "Р§РёСЃР»Рѕ РїР°Р»РёРЅРґСЂРѕРј!" << endl;
 	}
 	else
 	{
-		cout << "Это обычное число" << endl;
+		cout << "Р­С‚Рѕ РѕР±С‹С‡РЅРѕРµ С‡РёСЃР»Рѕ" << endl;
 	}
 #endif // POLINDROM
 #ifdef LUCKY_TICKET
 	int number;
-	cout << "Введите номер билета";cin >> number;
+	cout << "Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ Р±РёР»РµС‚Р°";cin >> number;
 	int sum1, sum2;
 	sum1 = sum2 = 0;
 	while (number >= 1000)
@@ -70,18 +70,18 @@ void main()
 	}
 	if (sum1 == sum2)
 	{
-		cout << "Счастливый билет!" << endl;
+		cout << "РЎС‡Р°СЃС‚Р»РёРІС‹Р№ Р±РёР»РµС‚!" << endl;
 	}
 	else
 	{
-		cout << "В другой раз!" << endl;
+		cout << "Р’ РґСЂСѓРіРѕР№ СЂР°Р·!" << endl;
 	}
 
 #endif // LUCKY_TICKET
-	char key; //код клавиши
+	char key; //РєРѕРґ РєР»Р°РІРёС€Рё
 	do
 	{
-		key = _getch();//Это функция. она ожидает нажатие клавиши и возвращает ASCII-код нажатой клавши
+		key = _getch();//Р­С‚Рѕ С„СѓРЅРєС†РёСЏ. РѕРЅР° РѕР¶РёРґР°РµС‚ РЅР°Р¶Р°С‚РёРµ РєР»Р°РІРёС€Рё Рё РІРѕР·РІСЂР°С‰Р°РµС‚ ASCII-РєРѕРґ РЅР°Р¶Р°С‚РѕР№ РєР»Р°РІС€Рё
 		cout << (int)key << "\t" << key << endl;
 	} while (key!=Escape);
 
