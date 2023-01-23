@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<conio.h>
 using namespace std;
 #define Enter 13
@@ -21,31 +21,31 @@ void main()
 #ifdef IF_SHOOTER
 		if (key == 'w' || key == 'W' || key == UP_ARROW)
 		{
-			cout << "Âïåðåä!" << endl;
+			cout << "Ð’Ð¿ÐµÑ€ÐµÐ´!" << endl;
 		}
 		else if (key == 's' || key == 'S' || key == DOWN_ARROW)
 		{
-			cout << "Íàçàä!" << endl;
+			cout << "ÐÐ°Ð·Ð°Ð´!" << endl;
 		}
 		else if (key == 'a' || key == 'A' || key == LEFT_ARROW)
 		{
-			cout << "Âëåâî!" << endl;
+			cout << "Ð’Ð»ÐµÐ²Ð¾!" << endl;
 		}
 		else if (key == 'd' || key == 'D' || key == RIGHT_ARROW)
 		{
-			cout << "Âïðàâî!" << endl;
+			cout << "Ð’Ð¿Ñ€Ð°Ð²Ð¾!" << endl;
 		}
 		else if (key == ' ')
 		{
-			cout << "Ïðûæîê!" << endl;
+			cout << "ÐŸÑ€Ñ‹Ð¶Ð¾Ðº!" << endl;
 		}
 		else if (key == Enter)
 		{
-			cout << "Îãîíü!" << endl;
+			cout << "ÐžÐ³Ð¾Ð½ÑŒ!" << endl;
 		}
 		else
 		{
-			if (key != -32 && key != Escape)cout << "Îøèáêà!" << endl;
+			if (key != -32 && key != Escape)cout << "ÐžÑˆÐ¸Ð±ÐºÐ°!" << endl;
 		}
 #endif // IF_SHOOTER
 	
@@ -54,21 +54,21 @@ void main()
 	{
 	case 'w':
 	case 'W':
-	case UP_ARROW:cout << "Âïåðåä!" << endl;break;
+	case UP_ARROW:cout << "Ð’Ð¿ÐµÑ€ÐµÐ´!" << endl;break;
 	case 's':
 	case 'S':
-	case DOWN_ARROW:cout << "Íàçàä!" << endl;break;
+	case DOWN_ARROW:cout << "ÐÐ°Ð·Ð°Ð´!" << endl;break;
 	case 'a':
 	case 'A':
-	case LEFT_ARROW:cout << "Âëåâî!" << endl;break;
+	case LEFT_ARROW:cout << "Ð’Ð»ÐµÐ²Ð¾!" << endl;break;
 	case 'd':
 	case 'D':
-	case RIGHT_ARROW:cout << "Âïðàâî!" << endl;break;
-	case ' ':cout << "Ïðûæîê!" << endl;break;
-	case Enter:cout << "Îãîíü!" << endl;break;
+	case RIGHT_ARROW:cout << "Ð’Ð¿Ñ€Ð°Ð²Ð¾!" << endl;break;
+	case ' ':cout << "ÐŸÑ€Ñ‹Ð¶Ð¾Ðº!" << endl;break;
+	case Enter:cout << "ÐžÐ³Ð¾Ð½ÑŒ!" << endl;break;
 	case -32:break;
 	case Escape:break;
-	default:cout << "Îøèáêà!" << endl;
+	default:cout << "ÐžÑˆÐ¸Ð±ÐºÐ°!" << endl;
 	}
 	} while (key != Escape);
 }
