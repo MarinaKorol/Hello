@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 //#define FOR_BASIC
@@ -14,20 +14,20 @@ void main()
 	
 #ifdef FOR_BASIC
 	int n;
-	cout << "Ââåäèòå êîëè÷åñòâî èòåðàöèé: " << endl;cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¸Ñ‚ÐµÑ€Ð°Ñ†Ð¸Ð¹: " << endl;cin >> n;
 	for (int i = 0;i < n;i++)
 	{
 		cout << i << "\t";
 	}
 	cout << endl;
 #endif // FOR_BASIC
-	//Ïîëüçîâàòåëü ââîäèò ÷èñëî ñ êëàâèàòóðû, à ïðîãðàììà âû÷èñëÿåò
-	//ôàêòîðèàë ýòîãî ÷èñëà;5!= 1 * 2 * 3 * 4 * 5 = 120;
+	//ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ Ð²Ð²Ð¾Ð´Ð¸Ñ‚ Ñ‡Ð¸ÑÐ»Ð¾ Ñ ÐºÐ»Ð°Ð²Ð¸Ð°Ñ‚ÑƒÑ€Ñ‹, Ð° Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð° Ð²Ñ‹Ñ‡Ð¸ÑÐ»ÑÐµÑ‚
+	//Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» ÑÑ‚Ð¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð°;5!= 1 * 2 * 3 * 4 * 5 = 120;
 	
 #ifdef FACTORIAL 
 	int n;
 	double f = 1;
-	cout << "Ââåäèòå ÷èñëî: ";cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";cin >> n;
 	for (int i = 1;i <= n;i++)
 	{
 		cout << i << "!= ";
@@ -41,8 +41,8 @@ void main()
 	double a;
 	int n;
 	double N = 1;
-	cout << "Ââåäèòå ÷èñëî, âîçâîäèìîå â ñòåïåíü: ";cin >> a;
-	cout << "Ââåäèòå ñòåïåíü, â êîòîðóþ õîòèòå âîçâåñòè ÷èñëî: ";cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾, Ð²Ð¾Ð·Ð²Ð¾Ð´Ð¸Ð¼Ð¾Ðµ Ð² ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ: ";cin >> a;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ, Ð² ÐºÐ¾Ñ‚Ð¾Ñ€ÑƒÑŽ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð²Ð¾Ð·Ð²ÐµÑÑ‚Ð¸ Ñ‡Ð¸ÑÐ»Ð¾: ";cin >> n;
 	if (n < 0)
 	{
 		a = 1 / a;
@@ -57,7 +57,7 @@ void main()
 	cout << N << endl;
 #endif // POWER
 #ifdef ASCII
-	cout << "Òàáëèöà ASCII-ñèìâîëîâ: \n";
+	cout << "Ð¢Ð°Ð±Ð»Ð¸Ñ†Ð° ASCII-ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²: \n";
 	setlocale(LC_ALL, "C");
 	for (int i = 0;i < 256;i++)
 	{
@@ -65,13 +65,13 @@ void main()
 		cout << (char)i << " ";
 	}
 	setlocale(LC_ALL, "");
-	cout << "Êîíåö!";
+	cout << "ÐšÐ¾Ð½ÐµÑ†!";
 	cout << endl;
 #endif // ASCII
 
 #ifdef FIBONACHI_1
 	int n;
-	cout << "Ââåäèòå ïðåäåëüíîå ÷èñëî: ";cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€ÐµÐ´ÐµÐ»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";cin >> n;
 	for (int a = 0, b = 1, c = a + b;a < n; a = b, b = c, c = a + b)
 	{
 		cout << a << "\t";
@@ -81,7 +81,7 @@ void main()
 
 #ifdef SIMPLE
 	int n;
-	cout << "Ââåäèòå ïðåäåëüíîå ÷èñëî: ";cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€ÐµÐ´ÐµÐ»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";cin >> n;
 	for (int i = 2;i < n;i++)
 	{
 		bool simple = true;
